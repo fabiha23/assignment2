@@ -62,6 +62,11 @@
     background-color: #FEA301;
     border-radius: 15px;
   }
+  .menu{
+    display: none;
+    height: 30px;
+    width: 30px;
+  }
   .banner{
     max-width: 1210px;
     margin: 0 auto; 
@@ -86,5 +91,35 @@
     color: white;
     border-radius: 15px;
     font-weight: bold;
+  }
+
+
+  @media screen and (max-width:576px) {
+    .nav-links, .brand, .nav-btn{
+        display: none;
+    }
+    .logo{
+        width: 46px;
+        height: 46px;
+    }
+    .menu{
+        display: block;
+    }
+    .nav-bar{
+        border-bottom: 1px solid #FEA301;
+        padding-bottom: 12px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .hero{
+        width:100%;
+        
+    }
+    .banner-cntnt, .banner-desc, .banner-btn{
+        margin-top: 20px;
+        text-align: center;
+    }
+
   }
 
