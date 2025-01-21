@@ -30,10 +30,14 @@
     color: #666666;
   }
   .l-grey{
-    background-color: rgb(245, 245, 245);;
+    background-color: rgb(245, 245, 245);
   }
 
   /* header */
+
+  header{
+    background-color: rgb(245, 245, 245);
+  }
 
   .nav-bar, .curri-cards, .curri-title{
     justify-content: space-between;
@@ -90,7 +94,7 @@
     font-size: 1.25rem;
     margin: 24px 0;
   }
-  .banner-btn{
+  .banner-btn, .story-btn{
     font-size: 20px;
     background-color: black;
     padding: 15px 60px;
@@ -163,8 +167,7 @@
     margin-bottom: 60px;
   }
   .background{
-    background-image: url(/assets/bg.png);
-    background-color: rgb(244, 242, 242);
+    background: linear-gradient(to top,rgba(244, 165, 29, 0.5) , rgba(233, 232, 232, 0.5) 50%), url(/assets/bg.png);
   }
   
   /* main stories */
@@ -174,10 +177,9 @@
     justify-content: center;
   }
   .stories-title{
-    text-align: center;
     font-size: 2.87rem;
     font-weight: bold;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
   }
   
   .grid{
@@ -191,18 +193,69 @@
     max-height: 630px;
     border-radius: 16px;
     overflow: hidden;
-
   }
   .story2, .story3, .story4, .story5{
-    max-width: 290px;
+    width:100%;
     max-height: 300px;
     background-color: white;
     border-radius: 16px;
     overflow: hidden;
   }
+  .story4 img, .story2 img, .story3 img, .story5 img{
+    width: 100%;
+  }
+  .story1-btn, .story2-btn, .story3-btn, .story4-btn, .story5-btn{
+    border: none;
+    color: white;
+    padding: 14px 19px;
+    background-color: #05D4DF;
+    border-radius: 50px;
+    position: relative;
+    left: 38px;
+    bottom: 25px;
+    font-size: 1rem;
+  }
+  .story2-btn, .story3-btn{
+    padding: 10px 20px;
+    background-color: #FEA301;
+  }
+  .story4-btn, .story5-btn{
+    padding: 10px 20px;
+    background-color: #5D58EF;
+  }
+  .story-h{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 38px;
+    margin-right: 40px;
+  }
+  .story-p{
+    margin-top: 40px;
+    margin-left: 38px;
+    margin-right: 40px;
+  }
+  .story-hh{
+    font-weight: bold;
+    margin: 0 20px 30px 38px;
+    font-size: 1rem;
+  }
+  .stories{
+    justify-items: center;
+  }
+
+  .story-btn{
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  /* footer */
   
   
   @media screen and (max-width:576px) {
+    header{
+      background-color: white;
+    }
     .nav-links, .brand, .nav-btn{
         display: none;
     }
@@ -214,7 +267,7 @@
         display: block;
     }
     .nav-bar{
-        border-bottom: 2px solid #FEA301;
+        border-bottom: 1px solid #FEA301;
         padding-bottom: 12px;
     }
     .banner{
@@ -240,6 +293,25 @@
     .spcl{
       display: none;
     }
+    .background{
+      background: linear-gradient(to top,rgba(244, 165, 29, 0.3) , rgb(255, 255, 255, 0.5) 35%), url(/assets/bg.png);
+    }
+    .story1{
+      display: none;
+    }
+    .story2-btn, .story3-btn, .story4-btn, .story5-btn{
+      padding: 7px 12px;
+      position: relative;
+      left: 13px;
+      bottom: 20px;
+    }
+    .stories-title{
+      padding-bottom: 25px;
+    }
+    .story-btn{
+      margin-top: 50px;
+    }
+
     
 
   }
