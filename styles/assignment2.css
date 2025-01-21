@@ -26,14 +26,17 @@
   .purple{
     color: #5D58EF;
   }
-
+  .grey{
+    color: #666666;
+  }
 
   /* header */
 
-  .nav-bar{
+  .nav-bar, .curri-cards, .curri-title{
     justify-content: space-between;
     max-width: 1210px;
     margin: 0 auto;
+    text-align: center;
   }
   .brand{
     font-weight: bold;
@@ -91,9 +94,58 @@
     color: white;
     border-radius: 15px;
     font-weight: bold;
+    border: none;
   }
 
+  /* main, curriculum */
 
+  .curriculum{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .curri-title{
+    font-size: 2.87rem;
+    font-weight: bold;
+    margin-bottom: 80px;
+  }
+  .curri-cards{
+    margin-bottom: 80px;
+    gap: 20px;
+  }
+  .card{
+    display: grid;
+    justify-items: center;
+    padding: 60px 40px;
+    border-radius: 18px;
+  }
+  .curri-h{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .curri-btn{
+    font-weight: bold;
+    border: none;
+    background-color: white;
+  }
+  .kinder{
+    border: 1px solid #ddfcfd;
+    background: linear-gradient(to bottom,#ddfcfd , white 20%);
+    box-shadow: inset 0 0 20px #ddfcfd;
+  }
+  .elementary{
+    border: 1px solid #fcebcf;
+    background: linear-gradient(to bottom,#fcebcf , white 20%);
+    box-shadow: inset 0 0 20px #fcebcf;
+  }
+  .Middle{
+    border: 1px solid #e3e3e8;
+    background: linear-gradient(to bottom,#e3e3e8, white 20%);
+    box-shadow: inset 0 0 20px #e3e3e8;
+  }
+  
+  
+  
   @media screen and (max-width:576px) {
     .nav-links, .brand, .nav-btn{
         display: none;
@@ -106,7 +158,7 @@
         display: block;
     }
     .nav-bar{
-        border-bottom: 1px solid #FEA301;
+        border-bottom: 2px solid #FEA301;
         padding-bottom: 12px;
     }
     .banner{
@@ -119,7 +171,17 @@
     .banner-cntnt, .banner-desc, .banner-btn{
         margin-top: 20px;
         text-align: center;
+        margin-bottom: 10px;
     }
+    .curri-title{
+      margin-bottom: 40px;
+    }
+    .curri-cards{
+      flex-direction: column;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
 
   }
 
