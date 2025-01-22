@@ -365,6 +365,15 @@
     .story-hh{
       margin: 0 10px 20px 17px;
     }
+    .footer-cntnt{
+      flex-direction: column;
+      margin-left: 30px;
+    }
+    .footer-desc{
+      margin-left: 0;
+      width: 100%;
+    }
+
 
   }
 
