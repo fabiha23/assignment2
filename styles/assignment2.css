@@ -80,6 +80,27 @@
     height: 30px;
     width: 30px;
   }
+
+  .marque{
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .marque p{
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  @keyframes marquee {
+    from { transform: translateX(0%);}
+    to { transform: translateX(-100%);}
+  }
+
   .banner, .stories{
     max-width: 1210px;
     margin: 0 auto; 
@@ -373,7 +394,9 @@
       margin-left: 0;
       width: 100%;
     }
-
+    .marque{
+      width: 85%;
+    }
 
   }
 
