@@ -170,7 +170,7 @@
     margin-bottom: 60px;
   }
   .background{
-    background: linear-gradient(to top,rgba(244, 165, 29, 0.5) , rgba(233, 232, 232, 0.5) 50%), url(/assets/bg.png);
+    background: linear-gradient(to top,rgba(244, 165, 29, 0.5) , rgba(233, 232, 232, 0.5) 50%), url(assets/bg.png);
   }
   
   /* main stories */
